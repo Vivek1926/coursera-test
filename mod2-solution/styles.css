@@ -1,0 +1,90 @@
+
+h1{
+    text-align: center;
+}
+section{
+    padding: 0;
+}
+
+
+section .chicken{
+    border: 1px solid black;
+    position: relative;
+    background-color: darkgrey; 
+}
+.box{
+    float: right;
+    border: 1px solid black;    
+    width: 100px;
+    text-align: center;
+    margin-top: -1px;
+    margin-right: -1px;
+
+}
+#Chicken{
+    background-color: rgb(226, 93, 93);
+    font-weight: bold;
+}
+#Beef{
+    background-color: rgb(151, 73, 73);
+    font-weight: bold;
+    color: white;
+}
+#Sushi{
+    background-color: rgba(235, 235, 126, 0.322);
+    font-weight: bold;
+}
+
+p{
+    padding: 0.5em;
+}
+
+@media(max-width:767px){
+    section{
+        padding: 2em;
+        margin-top: -2em;
+    }
+
+    section .chicken{
+        margin-top: 2em;
+        width: 100%;
+    }
+}
+@media(min-width:768px) and (max-width:1199px){
+    section{
+        margin:2em;
+        position: relative;
+        padding: 0;
+    }
+    section .chicken{
+        width: 47%;
+        height: 100px;
+        float: left;
+    }
+    section .chicken:nth-child(3){
+        width: 100%;
+        height: auto;
+        margin-top:2em ;
+    }
+    section .chicken:nth-child(2){
+        margin-left: 2.2em;
+        float: right;
+    }
+
+}
+@media(min-width:1200px){
+    section{
+        
+        margin: 2em;
+        padding: 0;
+    }
+    
+    section .chicken{
+        float: left;
+        height: 100px;
+        width: 30.3%;
+        margin: 1em;
+        
+    }
+    
+}
